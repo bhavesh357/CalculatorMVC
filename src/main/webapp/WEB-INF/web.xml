@@ -17,4 +17,41 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+    <display-name>Spring MVC Application</display-name>
+    <servlet>
+        <servlet-name>SubstractWeb</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubstractWeb</servlet-name>
+        <url-pattern>/substract</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MultiplyWeb</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MultiplyWeb</servlet-name>
+        <url-pattern>/Multiply</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DivideWeb</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DivideWeb</servlet-name>
+        <url-pattern>/divide</url-pattern>
+    </servlet-mapping>
+
 </web-app>
