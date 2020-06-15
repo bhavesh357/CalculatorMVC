@@ -16,7 +16,7 @@
         }
     %>
     <%=msg%>
-    <form action="LoginServlet" method="post">
+    <form action="welcome" method="post">
         <div class="form-input">
             <input type="text" name="email" placeholder="Email ID" class="form-input-text">
         </div>
@@ -29,7 +29,7 @@
         <button type="submit" value="Login" class="form-primary">Login</button>
     </form>
     <h4>Not a User?</h4>
-    <a href="register.jsp"><button>Register</button></a>
+    <a href="register"><button>Register</button></a>
 </div>
 </body>
 </html>

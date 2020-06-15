@@ -47,3 +47,20 @@ a{
     height: 90%;
     margin-top: 2.5%;
 }
+
+.form-body-calculator{
+    height: 50%;
+    width: 25%;
+    margin-top: 10%;
+}
+
+.calci-buttons{
+    height: 3em;
+    width: 4em;
+}
+
+.calci-button-text{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}

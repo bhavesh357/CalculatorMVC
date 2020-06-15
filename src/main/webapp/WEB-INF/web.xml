@@ -43,6 +43,31 @@
         <url-pattern>/result</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>RegisterWeb</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterWeb</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterUserWeb</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterUserWeb</servlet-name>
+        <url-pattern>/registeruser</url-pattern>
+    </servlet-mapping>
+
+
     <filter>
         <filter-name>numberFilter</filter-name>
         <filter-class>com.bl.test.filter.numberFilter</filter-class>
@@ -53,6 +78,15 @@
         <url-pattern>/subtract</url-pattern>
         <url-pattern>/multiply</url-pattern>
         <url-pattern>/divide</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>registerFilter</filter-name>
+        <filter-class>com.bl.test.filter.RegisterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>registerFilter</filter-name>
+        <url-pattern>/registeruser</url-pattern>
     </filter-mapping>
 
 </web-app>

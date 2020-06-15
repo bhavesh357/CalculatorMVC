@@ -8,12 +8,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("*")
 public class LoginController {
 
-    @RequestMapping(method = RequestMethod.GET)
-    public String printLogin(HttpServletRequest request, HttpServletResponse response){
+    @RequestMapping("/")
+    public String printLogin(){
 
         return "login";
     }
+
 }
