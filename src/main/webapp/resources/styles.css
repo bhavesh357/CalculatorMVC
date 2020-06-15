@@ -59,6 +59,13 @@ a{
     width: 4em;
 }
 
+.form-body-result{
+    height: 15%;
+    width: 70%;
+    margin-top: 15%;
+    left: 15%;
+}
+
 .calci-button-text{
     margin-top: 0px;
     margin-bottom: 10px;
