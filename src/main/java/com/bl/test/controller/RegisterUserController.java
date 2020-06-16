@@ -23,7 +23,7 @@ public class RegisterUserController {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         try {
-            UserDAO.insertUsgier(username,email, password);
+            UserDAO.insertUser(username,email, password);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
