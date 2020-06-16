@@ -24,7 +24,7 @@
 
     <filter>
         <filter-name>numberFilter</filter-name>
-        <filter-class>com.bl.test.filter.numberFilter</filter-class>
+        <filter-class>com.bl.test.filter.NumberFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>numberFilter</filter-name>

@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
-public class numberFilter implements Filter {
+public class NumberFilter implements Filter {
     private String numberPattern="^-?[0-9]{1,10}";
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
