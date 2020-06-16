@@ -29,10 +29,14 @@ public class UserDAO {
 
     public static int insertUser(String username,String email,String password) throws SQLException {
         con= DatabaseConnector.getConnection();
+        User user = new User();
+        user.setName(username);
+        user.setPassword(password);
+        user.setEmail(email);
         ps=con.prepareStatement("insert into mydatabase.newusers(name,emailId,password) values(?,?,?)");
-        ps.setString(1,username);
-        ps.setString(2,email);
-        ps.setString(3,password);
+        ps.setString(1,user.getName());
+        ps.setString(2,user.getEmail());
+        ps.setString(3,user.getPassword());
         int status = ps.executeUpdate();
         return status;
     }
