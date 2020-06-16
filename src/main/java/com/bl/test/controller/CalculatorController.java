@@ -1,4 +1,4 @@
-package com.bl.test;
+package com.bl.test.controller;
 
 
 import com.bl.test.model.User;

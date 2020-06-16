@@ -1,4 +1,4 @@
-package com.bl.test;
+package com.bl.test.controller;
 
 import com.bl.test.model.UserDAO;
 import org.springframework.stereotype.Controller;
@@ -23,7 +23,7 @@ public class RegisterUserController {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         try {
-            UserDAO.insertUser(username,email, password);
+            UserDAO.insertUsgier(username,email, password);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

@@ -1,4 +1,4 @@
-package com.bl.test;
+package com.bl.test.controller;
 
 
 import org.springframework.stereotype.Controller;

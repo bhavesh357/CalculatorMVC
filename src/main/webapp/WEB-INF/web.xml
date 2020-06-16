@@ -16,57 +16,11 @@
     <servlet-mapping>
         <servlet-name>LoginWeb</servlet-name>
         <url-pattern>/</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>WelcomeWeb</servlet-name>
-        <servlet-class>
-            org.springframework.web.servlet.DispatcherServlet
-        </servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>WelcomeWeb</servlet-name>
         <url-pattern>/welcome</url-pattern>
-    </servlet-mapping>
-
-    <display-name>Spring MVC Application</display-name>
-    <servlet>
-        <servlet-name>ResultWeb</servlet-name>
-        <servlet-class>
-            org.springframework.web.servlet.DispatcherServlet
-        </servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ResultWeb</servlet-name>
         <url-pattern>/result</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>RegisterWeb</servlet-name>
-        <servlet-class>
-            org.springframework.web.servlet.DispatcherServlet
-        </servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>RegisterWeb</servlet-name>
         <url-pattern>/register</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>RegisterUserWeb</servlet-name>
-        <servlet-class>
-            org.springframework.web.servlet.DispatcherServlet
-        </servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>RegisterUserWeb</servlet-name>
         <url-pattern>/registeruser</url-pattern>
     </servlet-mapping>
-
 
     <filter>
         <filter-name>numberFilter</filter-name>
