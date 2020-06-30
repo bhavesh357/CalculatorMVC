@@ -28,10 +28,7 @@
     </filter>
     <filter-mapping>
         <filter-name>numberFilter</filter-name>
-        <url-pattern>/add</url-pattern>
-        <url-pattern>/subtract</url-pattern>
-        <url-pattern>/multiply</url-pattern>
-        <url-pattern>/divide</url-pattern>
+        <url-pattern>/result</url-pattern>
     </filter-mapping>
 
     <filter>

@@ -16,7 +16,7 @@
     %>
     <%=msg%>
 
-    <form action="add" method="post">
+    <form action="result" method="post">
         <div class="form-input">
             <input type="text" name="first" placeholder="First Number" class="form-input-text">
         </div>
@@ -25,10 +25,10 @@
             <input type="text" name="second" placeholder="Second Number" class="form-input-text">
         </div>
         <br>
-        <button type="submit" value="+" class="calci-buttons"><p class="calci-button-text">+</p></button>
-        <button type="submit" value="+" formaction="subtract" class="calci-buttons"><p class="calci-button-text">-</p></button>
-        <button type="submit" value="+" formaction="multiply" class="calci-buttons"><p class="calci-button-text">x</p></button>
-        <button type="submit" value="+" formaction="divide" class="calci-buttons"><p class="calci-button-text">/</p></button>
+        <button type="submit" name="operation" value="+" class="calci-buttons"><p class="calci-button-text">+</p></button>
+        <button type="submit" name="operation" value="-" class="calci-buttons"><p class="calci-button-text">-</p></button>
+        <button type="submit" name="operation" value="X" class="calci-buttons"><p class="calci-button-text">x</p></button>
+        <button type="submit" name="operation" value="/" class="calci-buttons"><p class="calci-button-text">/</p></button>
         <br>
     </form>
 </div>

@@ -59,6 +59,13 @@ a{
     width: 4em;
 }
 
+.operation-button{
+    font-size: 2.2rem;
+    background: none;
+    color: white;
+    border: none;
+}
+
 .form-body-result{
     height: 15%;
     width: 70%;
