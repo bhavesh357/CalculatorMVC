@@ -6,6 +6,7 @@
 </head>
 <body>
 <div class="form-body form-body-calculator">
+    <h2>Hello, <%=(String) session.getAttribute("email")%></h2>
     <h1>Welcome to Calculator</h1>
     <%
         String msg=(String)request.getAttribute("error");

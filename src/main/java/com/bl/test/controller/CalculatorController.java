@@ -11,6 +11,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -20,7 +21,7 @@ import java.sql.SQLException;
 public class CalculatorController {
     private String message;
     @RequestMapping(method = RequestMethod.POST)
-    public String printWelcome(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public String printWelcome(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws ServletException, IOException {
 
         String email = request.getParameter("email");
         String pwd = request.getParameter("password");
@@ -31,6 +32,7 @@ public class CalculatorController {
             throwables.printStackTrace();
         }
         if (user!=null){
+            session.setAttribute("email",email);
             return "welcome";
         }else{
             RequestDispatcher rd = request.getServletContext().getRequestDispatcher("/login.jsp");
@@ -41,7 +43,10 @@ public class CalculatorController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public String writeTest(){
-        return "welcome";
+    public String writeTest(HttpSession session){
+        if(session.getAttribute("email")!=null) {
+            return "welcome";
+        }
+        return "login";
     }
 }
